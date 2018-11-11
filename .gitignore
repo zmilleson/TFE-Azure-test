@@ -1,0 +1,6 @@
+*.backup
+*.tfstate*
+*/.terraform/*
+*/*/*/.terraform/*
+*secrets.tfvars
+*planFile
