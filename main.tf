@@ -9,14 +9,14 @@ terraform {
 
 # Variables
 variable "name" {
-    default = "millesonTest31"
+    default = "mille31"
 }
 variable "location" {
     default = "eastus2"
 }
 
 variable "vmcount" {
-    default = 2
+    default = 1
 }
 
 # Resources
