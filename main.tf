@@ -1,3 +1,4 @@
+# Provider and terraform versions
 provider "azurerm" {
     version = "= 1.4"
 }
@@ -6,6 +7,7 @@ terraform {
     required_version = "= 0.11.8"
 }
 
+# Variables
 variable "name" {
     default = "millesonTest31"
 }
@@ -17,7 +19,7 @@ variable "vmcount" {
     default = 2
 }
 
-
+# Resources
 resource "azurerm_resource_group" "main" {
     name        = "${var.name}-rg"
     location    = "${var.location}"
