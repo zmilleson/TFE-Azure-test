@@ -69,7 +69,7 @@ resource "azurerm_virtual_machine" "main" {
     location                = "${azurerm_resource_group.main.location}"
     resource_group_name     = "${azurerm_resource_group.main.name}"
     network_interface_ids   = ["${element(azurerm_network_interface.main.*.id, count.index)}"]
-    vm_size                 = "Standard_A2_v2"
+    vm_size                 = "Standard_A4_v2"
     count                   = "${var.vmcount}"
 
     storage_image_reference {
